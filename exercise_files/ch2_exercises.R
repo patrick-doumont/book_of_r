@@ -58,8 +58,25 @@ answer_vec
 #b
 b_obj <- a_vec[c(1,length(a_vec))]
 b_obj
+
 #c
 c_obj <- a_vec[-c(1, length(a_vec))]
 c_obj
+
 #d
 (d_obj <- c(b_obj[1], c_obj, b_obj[2]))
+
+#e
+a_vec <- sort(x=a_vec)
+
+#f
+(a1_vec <- a_vec[length(a_vec):1])
+(a2_vec <- sort(x=a_vec, decreasing = TRUE))
+
+#g
+(g_vec <- c(rep(c_obj[3], times = 3), rep(c_obj[6], times = 4), c_obj[length(c_obj)]))
+
+#h
+h_vec <- a_vec
+h_vec[c(1,5:7,length(h_vec))] <- 99:95
+h_vec
