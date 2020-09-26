@@ -80,3 +80,23 @@ a_vec <- sort(x=a_vec)
 h_vec <- a_vec
 h_vec[c(1,5:7,length(h_vec))] <- 99:95
 h_vec
+
+##Exercise 2.5
+#a
+vec_1 <- c(2, 0.5, 1, 2, 0.5, 1, 2, 0.5, 1)
+vec_2 <- c(1/2, 2, 1)
+vec_3 <- vec_1 * vec_2
+vec_3
+
+#b
+fahren <- c(45, 77, 20, 19, 101, 120, 212)
+to_C <- 5/9*(fahren-32)
+(to_C)
+
+#c
+vec_2.5_c <- rep(x=c(2,4,6), times = 2) * rep(x=c(1,2), each = 3)
+vec_2.5_c
+
+#d
+vec_2.5_c[2:5] <- c(-0.1, -100)
+vec_2.5_c
